@@ -34,14 +34,16 @@ Original file is located at
 # else:
 #   print("It's hard to tell the customer's sentiment from the text.")
 
+!pip install textblob
+
 import streamlit as st
 from textblob import TextBlob
 import subprocess
 import os
 
 # Install necessary packages (run only once, or you can do it outside the app)
-# !pip install git+https://github.com/openai/whisper.git
-# !sudo apt update && sudo apt install ffmpeg
+!pip install git+https://github.com/openai/whisper.git
+!sudo apt update && sudo apt install ffmpeg
 
 
 def process_audio(file_path):
